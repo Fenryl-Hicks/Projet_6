@@ -41,8 +41,8 @@ IQueryable<Ticket> GetTickets(
 
     return query; 
 } 
-var productId = 3; 
-var versionId = 5; 
+var productId = 3; // "Planificateur d'entrainement"
+var versionId = 5; // " 2.0"
 
 var ticketsEnCours = GetTickets( 
     resolved: false, 

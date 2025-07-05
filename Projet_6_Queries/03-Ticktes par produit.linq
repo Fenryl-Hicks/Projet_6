@@ -42,7 +42,7 @@ IQueryable<Ticket> GetTickets(
     return query; 
 } 
 
-var productId = 1; 
+var productId = 1; // "Trader en herbe"
 
 var ticketsEnCours = GetTickets(true, productId: productId); 
 var ticketsResolus = GetTickets(false, productId: productId); 

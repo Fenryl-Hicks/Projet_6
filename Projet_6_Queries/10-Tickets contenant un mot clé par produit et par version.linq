@@ -41,8 +41,8 @@ IQueryable<Ticket> GetTickets(
 
     return query; 
 } 
-var productId = 4;
-var versionId = 2;
+var productId = 4; // " Planificateur d'anxiété social "
+var versionId = 2; // " 1.1 "
 var keyword = "Google";
 
 
@@ -65,6 +65,6 @@ var ticketsResolus = GetTickets(
 var allTickets = ticketsEnCours.Concat(ticketsResolus);
 
 
-allTickets.Dump("Tickets du produit 4 (v1.1) contenant 'Google'");
+allTickets.Dump();
 
 

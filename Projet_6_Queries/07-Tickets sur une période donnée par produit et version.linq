@@ -44,8 +44,8 @@ IQueryable<Ticket> GetTickets(
 
 var startDate = new DateTime(2024, 1, 1); 
 var endDate = new DateTime(2024, 9, 30); 
-var productId = 2; 
-var versionId = 6; 
+var productId = 2; // " Maître des inverstissements "
+var versionId = 6; // " 2.1 "
 
 // Tickets en cours (StatusId == 1) 
 var ticketsEnCours = GetTickets( 
@@ -69,4 +69,3 @@ var ticketsResolus = GetTickets(
 var allTickets = ticketsEnCours.Concat(ticketsResolus); 
 
 allTickets.Dump(); 
-

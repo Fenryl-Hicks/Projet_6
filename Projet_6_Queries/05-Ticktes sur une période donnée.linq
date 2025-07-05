@@ -59,10 +59,8 @@ var ticketsResolus = GetTickets(
     end: endDate 
 ); 
 
-// Fusionner les deux 
 var allTickets = ticketsEnCours.Concat(ticketsResolus); 
 
-// Afficher 
 allTickets.Dump();
 
 

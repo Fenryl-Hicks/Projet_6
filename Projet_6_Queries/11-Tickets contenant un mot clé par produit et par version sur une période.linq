@@ -41,8 +41,8 @@ IQueryable<Ticket> GetTickets(
 
     return query; 
 } 
-var productId = 1;
-var versionId = 4;
+var productId = 1; // " Trader en herbe "
+var versionId = 4; // " 1.3 "
 var keyword = "windows";
 var startDate = new DateTime(2023, 3, 1);
 var endDate = new DateTime(2025, 3, 31);

@@ -44,7 +44,7 @@ IQueryable<Ticket> GetTickets(
 
 var startDate = new DateTime(2024, 6, 1); 
 var endDate = new DateTime(2024, 10, 31); 
-var productId = 4; 
+var productId = 4; // "Planificateur d'anxiété social"
 
 // Tickets en cours (StatusId == 1) 
 var ticketsEnCours = GetTickets( 

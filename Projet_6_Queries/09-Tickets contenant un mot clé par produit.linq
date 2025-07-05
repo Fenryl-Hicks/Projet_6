@@ -42,7 +42,7 @@ IQueryable<Ticket> GetTickets(
     return query; 
 } 
 
-var productId = 1;
+var productId = 1; // " Trader en herbe "
 var keyword = "mise à jour";
 
 // Tickets en cours du produit 1 contenant "mise à jour"
@@ -59,10 +59,8 @@ var ticketsResolus = GetTickets(
     keywords: new List<string> { keyword }
 );
 
-// Fusion des deux
 var allTickets = ticketsEnCours.Concat(ticketsResolus);
 
-// Affichage
-allTickets.Dump("Tickets du produit 1 avec le mot 'mise à jour'");
+allTickets.Dump();
 
 
