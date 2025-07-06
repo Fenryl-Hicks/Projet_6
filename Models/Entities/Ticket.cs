@@ -14,8 +14,6 @@ public class Ticket
 
 
     // Foreign Keys
-
-
     public int ProductVersionOperatingSystemId { get; set; }
 
     // Navigation properties
